@@ -1,11 +1,9 @@
-#include "stdafx.h"
 #include <iostream>
-
 using namespace std;
 
 //This program calculates your GPA
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
     cout << "How many classes do you have?\n";
     int numberClasses;
@@ -14,7 +12,7 @@ int _tmain(int argc, _TCHAR* argv[])
     int percent = 0;
     int i = 0;
     for (i = 0; i < numberClasses; i++) {
-        cout << "What percentage did you recieve in the class? \n";
+        cout << "What percentage did you receive in this class? \n";
         cin >> percent;
         if (percent >= 100 && percent >= 94){
             total += 4;
